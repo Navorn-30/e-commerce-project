@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+    @apply font-bold;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+
+  h3 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+
+  h4 {
+    @apply text-xl;
+    @apply font-semibold;
+  }
+
+  h5 {
+    @apply text-lg;
+    /*or text-lg */
+    @apply font-semibold;
+  }
+
+  h6 {
+    @apply text-sm;
+    @apply font-semibold;
+  }
+}
+
+
+
+/* Font Poppins */
+@font-face {
+    font-family: poppins-bold;
+    src: url(../../assets/fonts/poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-semibold;
+    src: url(../../assets/fonts/poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(../../assets/fonts/poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(../../assets/fonts/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-thin;
+    src: url(../../assets/fonts/poppins/Poppins-Thin.ttf);
+}
+
+/* Sportify-Mix */
+@font-face {
+    font-family: sportify-mix-bold;
+    src: url(../../assets/fonts/sportify-mix/SpotifyMix-Bold.ttf);
+}
+@font-face {
+    font-family: sportify-mix-medium;
+    src: url(../../assets/fonts/sportify-mix/SpotifyMix-Medium.ttf);
+}
+@font-face {
+    font-family: sportify-mix-regular;
+    src: url(../../assets/fonts/sportify-mix/SpotifyMix-Regular.ttf);
+}
+@font-face {
+    font-family: sportify-mix-thin;
+    src: url(../../assets/fonts/sportify-mix/SpotifyMix-Thin.ttf);
+}
+
+@theme {
+    /* Font Poppins */
+    --font-poppins-bold: "poppins-bold", "sans-serif";
+    --font-poppins-semibold: "poppins-semibold", "sans-serif";
+    --font-poppins-medium: "poppins-medium", "sans-serif";
+    --font-poppins-regular: "poppins-regular", "sans-serif";
+    --font-poppins-thin: "poppins-thin", "sans-serif";
+
+    /* Font SportifyMix */
+    --font-sportify-bold: "sportify-mix-bold", "sans-serif";
+    --font-sportify-medium: "sportify-mix-medium", "sans-serif";
+    --font-sportify-regular: "sportify-mix-regular", "sans-serif";
+    --font-sportify-thin: "sportify-mix-thin", "sans-serif";
+}
