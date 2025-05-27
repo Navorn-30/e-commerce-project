@@ -88,4 +88,10 @@
     --font-sportify-medium: "sportify-mix-medium", "sans-serif";
     --font-sportify-regular: "sportify-mix-regular", "sans-serif";
     --font-sportify-thin: "sportify-mix-thin", "sans-serif";
+
+    /* Color */
+    --color-primary: #396CA0;
+    --color-secondary: #AF82C4;
+    --color-accent: #AAB7B7;
+    --color-background: #FAFAFA;
 }
