@@ -6,9 +6,111 @@
     <title>E-commerce</title>
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
-  <body>
+  <body class="bg-background">
     <header></header>
-    <main></main>
+    <main
+      class="xl:mx-[150px] pt-[100px] lg:mx-[100px] md:mx-[50px] sm:mx-[40px] mx-[30px]"
+    >
+      <section
+        class="hero-section flex xl:gap-[120px] xl:flex-row lg:gap-[20px] lg:flex-row md:flex-row md:gap-[10px] sm:gap-[10px] sm:flex-row flex-col gap-[10px]"
+      >
+        <div class="xl:w-[700px] lg:w-[500px] md:w-[350px] sm:w-[300px] w-auto">
+          <h1
+            class="font-sportify-bold text-primary xl:text-[65px] lg:text-[50px] md:text-[40px] sm:text-[30px] text-[35px] text-center"
+          >
+            MEN'S FASHION
+          </h1>
+          <h3
+            class="font-poppins-semibold italic text-accent xl:text-[40px] xl:px-[130px] xl:py-[40px] lg:text-[30px] lg:px-[70px] lg:py-[35px] md:text-[25px] md:px-[50px] md:py-[25px] sm:text-[20px] sm:px-[40px] sm:py-[20px] text-[25px] px-[40px] py-[20px] text-center"
+          >
+            SEASON SALE
+          </h3>
+          <h3
+            class="font-sportify-medium text-secondary xl:text-[40px] xl:px-[110px] lg:text-[30px] lg:px-[65px] md:text-[25px] md:px-[45px] sm:text-[16px] sm:px-[40px] text-[20px] px-[45px] text-center"
+          >
+            Min. 35-70% Off
+          </h3>
+          <div
+            class="flex xl:py-[100px] xl:ps-[170px] xl:gap-[100px] lg:py-[90px] lg:ps-[50px] lg:gap-[80px] md:py-[80px] md:ps-[40px] md:gap-[40px] sm:py-[50px] sm:ps-[20px] sm:gap-[30px] px-[20px] py-[30px] gap-[60px] justify-center"
+          >
+            <button
+              type="button"
+              class="border-1 border-primary bg-primary cursor-pointer font-poppins-regular rounded-xl text-background hover:bg-blue-700 hover:border-blue-700 xl:px-[30px] xl:py-[15px] lg:px-[25px] lg:py-[12px] md:px-[15px] md:py-[10px] md:text-[14px] sm:px-[12px] sm:py-[12px] sm:text-[12px] px-[15px] py-[12px] text-[12px]"
+            >
+              SHOP NOW
+            </button>
+            <button
+              type="button"
+              class="border-1 border-secondary cursor-pointer font-poppins-regular rounded-xl text-secondary hover:bg-gray-200 hover:border-gray-200 xl:px-[25px] xl:py-[15px] lg:px-[20px] lg:py-[12px] md:px-[12px] md:py-[10px] md:text-[14px] sm:px-[12px] sm:py-[10px] sm:text-[12px] px-[12px] py-[12px] text-[12px]"
+            >
+              LEARN MORE
+            </button>
+          </div>
+        </div>
+        <div class="xl:w-[600px] lg:w-[400px] md:w-[350px] sm:w-[300px] w-auto">
+          <img src="./assets/images/img/hero_img.png" alt="hero-img" />
+        </div>
+      </section>
+
+      <section class="feature-bar py-[60px]">
+        <div
+          class="bg-primary rounded-xl xl:py-[28px] lg:py-[23px] md:py-[18px] sm:py-[16px] py-[10px]"
+        >
+          <ul
+            class="flex font-sportify-regular justify-around cursor-pointer text-accent xl:text-[18px] lg:text-[18px] md:text-[14px] sm:text-[12px] flex-wrap text-[14px]"
+          >
+            <li>Free Shipping</li>
+            <li>No Delivery Fee</li>
+            <li>Ships Fee</li>
+            <li>Free Home Delivery</li>
+            <li>Delivered</li>
+            <li>Fast & Free</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="box-hero py-[60px] flex xl:gap-[20px]">
+        <div class="rounded-xl relative cursor-pointer xl:w-[600px] xl:h-[320px]">
+            <img class="w-[600px] h-[320px] rounded-xl" src="./assets/images/img/box-image1.JPG" alt="box-image">
+            <div class="absolute top-1 right-[15px]">
+              <h2 class="font-sportify-medium text-background xl:text-[40px]">New Arrival</h2>
+              <h3 class="font-poppins-semibold text-primary xl:py-[20px] xl:text-[25px] xl:ps-[20px]">Women style</h3>
+              <h3 class="font-sportify-regular text-gray-600 xl:text-[30px] xl:ps-[15px]">Up to 70% Off</h3>
+            </div>    
+        </div>
+        <div>
+          <div class="grid grid-cols-2 xl:w-[550px] xl:gap-x-[49px] xl:gap-y-[10px]">
+            <div class="rounded-xl relative cursor-pointer xl:w-[290px] xl:h-[150px]">
+              <img class="rounded-xl xl:w-[290px] xl:h-[150px]" src="./assets/images/img/box-image2.jpg" alt="box-image">
+              <div class="absolute top-1 right-[15px]">
+                <p class="font-sportify-medium text-primary text-center xl:text-[20px]">Top Brand</p>
+                <p class="font-poppins-medium text-center italic text-gray-600 xl:text-[14px] xl:py-[5px]">Fashion style</p>
+                <p class="font-sportify-regular text-secondary">Delivery 80% Off</p>
+              </div>
+            </div>
+            <div class="rounded-xl relative cursor-pointer xl:w-[290px] xl:h-[150px]">
+              <img class="rounded-xl xl:w-[290px] xl:h-[150px]" src="./assets/images/img/box-image3.jpg" alt="box-image">
+              <div class="absolute top-1 right-[5px]">
+                <p class="font-sportify-medium text-primary text-center xl:text-[20px]">Top Brand</p>
+                <p class="font-poppins-medium text-center italic text-gray-600 xl:text-[14px] xl:py-[5px]">Classic style</p>
+                <p class="font-sportify-regular text-secondary">Delivery 50% Off</p>
+              </div>
+            </div>
+
+            <div class="col-span-2 rounded-xl relative cursor-pointer xl:w-[590px] xl:h-[160px]">
+              <img class="rounded-xl object-cover xl:w-[590px] xl:h-[160px]" src="./assets/images/img/box-image4.webp" alt="box-image">
+              <div class="absolute top-2 left-[35px]">
+                <p class="font-sportify-medium text-gray-700 text-center xl:text-[20px]">New In</p>
+                <p class="font-poppins-medium text-center italic text-secondary xl:text-[16px] xl:py-[8px]">Kid style</p>
+                <p class="font-sportify-regular text-primary xl:pb-[8px]">New Promotion!!</p>
+                <button class="font-poppins-regular border-1 rounded-xl border-secondary hover:bg-secondary ms-[20px] hover:text-white cursor-pointer xl:px-[8px] xl:py-[4px] xl:text-[12px]" type="button">Shop Now</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
