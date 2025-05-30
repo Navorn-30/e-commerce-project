@@ -5,10 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/output.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
-  <body>
-    <header></header>
+  <body class="m-0 p-0 box-border overflow-y-auto bg-gray-300">
+    <header class="bg-white shadow">
+      <nav
+        class="container mx-auto px-5 py-4 md:flex items-center justify-between"
+      >
+        <div class="flex items-center justify-between w-full md:w-auto">
+          <div class="flex items-center space-x-4">
+            <img
+              class="w-12 md:w-[70px]"
+              src="./assets/picture/icon-no_bg.png"
+              alt="PressMart Logo"
+            />
+            <span class="font-bold text-xl md:text-3xl text-blue-600"
+              >PressMart</span
+            >
+          </div>
+
+          <ion-icon
+            class="md:hidden text-3xl cursor-pointer"
+            name="menu"
+            onclick="onToggleMenu(this)"
+          ></ion-icon>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden flex-col md:flex md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6 font-medium text-gray-700 mt-4 md:mt-0"
+        >
+          <ul
+            class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6"
+          >
+            <li><a href="#" class="hover:text-blue-600 transition">Home</a></li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition">Dashboard</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-blue-600 transition">Contact Us</a>
+            </li>
+          </ul>
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition"
+          >
+            Search
+          </button>
+        </div>
+      </nav>
+    </header>
+
     <main></main>
     <footer></footer>
+
+    <script>
+      function onToggleMenu(icon) {
+        icon.name = icon.name === "menu" ? "close" : "menu";
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
