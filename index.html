@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/output.css" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
   </head>
   <body class="m-0 p-0 box-border overflow-y-auto bg-gray-300">
     <header class="bg-white shadow">
@@ -49,7 +45,7 @@
               <a href="#" class="hover:text-blue-600 transition">Dashboard</a>
             </li>
             <li>
-              <a href="#" class="hover:text-blue-600 transition">Contact Us</a>
+              <a href="./page/contact.html" class="hover:text-blue-600 transition">Contact Us</a>
             </li>
           </ul>
           <button
@@ -61,9 +57,71 @@
       </nav>
     </header>
 
-    <main></main>
-    <footer></footer>
+    <main>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </main>
+    <footer class="bg-white py-10">
+      <div
+        class="container mx-auto px-5 flex flex-col md:flex-row md:justify-between gap-10"
+      >
+        <div class="flex flex-col gap-4 items-start">
+          <span class="font-bold text-xl md:text-2xl text-blue-600"
+            >PressMart</span
+          >
+          <img
+            class="w-12 md:w-[55px]"
+            src="./assets/picture/icon-no_bg.png"
+            alt="PressMart Logo"
+          />
+          <a href="#" class="text-purple-500">www.pressmart.com</a>
+        </div>
 
+        <div class="flex flex-col gap-2 md:max-w-sm">
+          <span class="font-semibold text-base md:text-lg">About</span>
+          <p class="text-sm text-gray-700">
+            Welcome to
+            <span class="text-purple-400 font-medium">PressMart</span>, your
+            go-to destination for stylish, affordable, and high-quality
+            clothing. Whether you're looking for everyday essentials, the latest
+            fashion trends, or timeless wardrobe staples, we have it all.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <span class="font-semibold text-base md:text-lg">Our Brand</span>
+          <p>Balenciaga</p>
+          <p>Versace</p>
+          <p>Louis Vuitton</p>
+          <p>Adidas & Nike</p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <span class="font-semibold text-base md:text-lg">Services</span>
+          <p>Shipping & Payment</p>
+          <p>FAQ</p>
+          <p>Returns</p>
+          <p>Terms & Conditions</p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <span class="font-semibold text-base md:text-lg">Contact</span>
+          <p>E-mail: shop@mail.com</p>
+          <p>Phone: +66 45 670 98</p>
+          <p>Connect with us:</p>
+          <div class="flex gap-3 text-xl text-gray-700">
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-tiktok"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script>
       function onToggleMenu(icon) {
         icon.name = icon.name === "menu" ? "close" : "menu";
