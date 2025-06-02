@@ -4,7 +4,7 @@ let featureProduct = document.querySelector("#feature-product");
 
 const fetchProducts = async () => {
   try {
-    const response = await fetch("https://fakestoreapi.com/products");
+    const response = await fetch("https://api.escuelajs.co/api/v1/products");
     const data = await response.json();
     console.log(data);
     featureProduct.innerHTML = data
@@ -14,7 +14,7 @@ const fetchProducts = async () => {
 
   <img
     class="w-full h-[155px] aspect-square object-cover"
-    src=${data.image || "https://www.chanchao.com.tw/images/default.jpg"}
+    src=${data.images[0] || "https://www.chanchao.com.tw/images/default.jpg"}
     alt="product image"
   />
   <div class="bady-card px-[6px] py-[8px]">
@@ -39,3 +39,6 @@ const fetchProducts = async () => {
   }
 };
 fetchProducts();
+
+
+
