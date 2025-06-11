@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link sizes="16*16" rel="shortcut icon" href="../assets/images/logo/logo_shop.png" type="image/x-icon">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../src/css/output.css" />
+  </head>
+  <body>
+    <header></header>
+    <main id="loading">
+    <section
+      class="pt-[100px] xl:mx-[150px] lg:mx-[100px] md:mx-[50px] sm:mx-[40px] mx-[30px]"
+    >
+      <div class="pb-[50px]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          width="30"
+          height="25"
+        >
+          <a href="../index.html">
+            <path
+              fill="#396ca0"
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </a>
+        </svg>
+      </div>
+      <section class="flex xl:gap-[40px] xl:flex-row lg:flex-row lg:gap-[30px] md:flex-row md:gap-[25px] sm:flex-col sm:gap-[20px] flex-col gap-[15px]">
+        <div class="image flex xl:gap-[15px] xl:flex-row lg:flex-row lg:gap-[12px] md:flex-col md:gap-[10px] sm:flex-col sm:gap-[10px] flex-col gap-[10px]">
+          <div
+            class="cursor-pointer shadow-md rounded-xl xl:w-[500px] xl:h-[480px] lg:w-[350px] lg:h-[340px] md:w-[340px] md:h-[310px] sm:w-full sm:h-[500px] w-full h-[380px]"
+          >
+            <img
+              class="object-cover rounded-xl w-auto xl:h-[480px] lg:h-[340px] md:h-[310px] sm:h-[500px] h-[380px]"
+              id="mainImage"
+              src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+              alt=""
+            />
+          </div>
+          <div class="sub-image cursor-pointer flex xl:flex-col xl:gap-[20px] lg:flex-col lg:gap-[12px] md:flex-row md:gap-[12px] sm:flex-row sm:gap-[12px] flex-row gap-[10px]">
+            <img
+            id="subImages"
+              class="object-cover shadow-md rounded-lg xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[75px] md:h-[75px] sm:w-[130px] sm:h-[120px] w-[60px] h-[60px]"
+              onclick="changeImage(this.src)"
+              src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+              alt=""
+            />
+            <img
+            id="subImages2"
+              class="object-cover shadow-md rounded-lg xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[75px] md:h-[75px] sm:w-[130px] sm:h-[120px] w-[60px] h-[60px]"
+              onclick="changeImage(this.src)"
+              src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+              alt=""
+            />
+            <img
+            id="subImages3"
+              class="object-cover shadow-md rounded-lg xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[75px] md:h-[75px] sm:w-[130px] sm:h-[120px] w-[60px] h-[60px]"
+              onclick="changeImage(this.src)"
+              src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+              alt=""
+            />
+            <img
+            id="subImages4"
+              class="object-cover shadow-md rounded-lg xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[75px] md:h-[75px] sm:w-[130px] sm:h-[120px] w-[60px] h-[60px]"
+              onclick="changeImage(this.src)"
+              src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="border-l border-[2px] border-accent"></div>
+        <section class="detail xl:w-[480px] lg:w-[400px] md:w-auto sm:w-full">
+          <div class="description">
+            <h3 id="title" class="text-secondary font-sportify-regular xl:pb-[15px] xl:text-[24px] lg:text-[22px] lg:pb-[14px] md:pb-[8px] md:text-[18px] sm:text-[18px] sm:pb-[10px]">
+              New Style
+            </h3>
+            <p id="description" class="text-primary font-poppins-regular line-clamp-3 xl:text-[16px] lg:text-[14px] md:text-[10px] sm:text-[14px] text-[12px]">
+              A sleek black satin blouse with lace-trimmed high neckline and
+              pearl-buttoned cuffs, paired with tailored charcoal
+              trousers—perfect for elegant evenings.
+            </p>
+          </div>
+          <div class="price xl:pt-[17px] lg:pt-[14px] md:pt-[10px] sm:pt-[12px] pt-[10px]">
+            <p class="font-poppins-medium text-secondary xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[20px] text-[18px]">
+              $<span id="price"></span>
+            </p>
+          </div>
+          <div class="rating flex xl:pt-[5px] xl:gap-[2px] lg:pt-[3px] lg:gap-[2px] md:pt-[2px] md:gap-[1px] sm:pt-[2px] sm:gap-[2px] pt-[2px] gap-[2px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="12"
+              height="12"
+            >
+              <path
+                fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="12"
+              height="12"
+            >
+              <path
+                fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="12"
+              height="12"
+            >
+              <path
+                fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="12"
+              height="12"
+            >
+              <path
+                fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="12"
+              height="12"
+            >
+              <path
+                fill="#FFD43B"
+                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+              />
+            </svg>
+          </div>
+          <div class="size">
+            <h4
+              class="font-sportify-regular text-secondary xl:text-[20px] xl:pt-[20px] lg:text-[18px] lg:pt-[15px] md:text-[16px] md:pt-[12px] sm:text-[18px] sm:pt-[12px] text-[14px] pt-[10px]"
+            >
+              Size
+            </h4>
+            <div>
+              <button
+                id="button"
+                class="font-poppins-regular cursor-pointer text-gray-500 outline-blue-500 rounded-lg xl:text-[12px] border xl:px-[15px] xl:py-[2px] lg:text-[10px] lg:px-[12px] lg:py-[2px] md:text-[10px] md:px-[9px] md:py-[1px] sm:text-[12px] sm:px-[11px] sm:py-[1px] text-[10px] px-[9px] py-[1px]"
+                type="button"
+              >
+                S
+              </button>
+              <button
+                id="button"
+                class="font-poppins-regular cursor-pointer text-gray-500 outline-blue-500 rounded-lg xl:text-[12px] border xl:px-[15px] xl:py-[2px] lg:text-[10px] lg:px-[12px] lg:py-[2px] md:text-[10px] md:px-[9px] md:py-[1px] sm:text-[12px] sm:px-[11px] sm:py-[1px] text-[10px] px-[9px] py-[1px]"
+                type="button"
+              >
+                M
+              </button>
+              <button
+                id="button"
+                class="font-poppins-regular cursor-pointer text-gray-500 outline-blue-500 rounded-lg xl:text-[12px] border xl:px-[15px] xl:py-[2px] lg:text-[10px] lg:px-[12px] lg:py-[2px] md:text-[10px] md:px-[9px] md:py-[1px] sm:text-[12px] sm:px-[11px] sm:py-[1px] text-[10px] px-[9px] py-[1px]"
+                type="button"
+              >
+                L
+              </button>
+              <button
+                id="button"
+                class="font-poppins-regular cursor-pointer text-gray-500 outline-blue-500 rounded-lg xl:text-[12px] border xl:px-[15px] xl:py-[2px] lg:text-[10px] lg:px-[12px] lg:py-[2px] md:text-[10px] md:px-[9px] md:py-[1px] sm:text-[12px] sm:px-[11px] sm:py-[1px] text-[10px] px-[9px] py-[1px]"
+                type="button"
+              >
+                XL
+              </button>
+              <button
+                id="button"
+                class="font-poppins-regular cursor-pointer text-gray-500 outline-blue-500 rounded-lg xl:text-[12px] border xl:px-[15px] xl:py-[2px] lg:text-[10px] lg:px-[12px] lg:py-[2px] md:text-[10px] md:px-[9px] md:py-[1px] sm:text-[12px] sm:px-[11px] sm:py-[1px] text-[10px] px-[9px] py-[1px]"
+                type="button"
+              >
+                XXL
+              </button>
+            </div>
+          </div>
+          <div
+            class="btnShop xl:pt-[30px] lg:pt-[30px] md:pt-[15px] sm:pt-[14px] pt-[10px] flex xl:gap-[30px] lg:gap-[24px] md:gap-[15px] sm:gap-[15px] gap-[14px]"
+          >
+            <button
+              type="button"
+              class="border-1 border-primary bg-primary cursor-pointer font-poppins-regular rounded-2xl text-background hover:bg-blue-700 hover:border-blue-700 xl:px-[30px] xl:py-[12px] lg:px-[20px] lg:py-[8px] md:px-[10px] md:py-[8px] md:text-[10px] sm:px-[16px] sm:py-[10px] sm:text-[12px] px-[12px] py-[8px] text-[8px]"
+            >
+              SHOP NOW
+            </button>
+            <button
+              type="button"
+              class="border-1 border-secondary cursor-pointer font-poppins-regular rounded-2xl text-secondary hover:bg-gray-200 hover:border-gray-200 xl:px-[20px] xl:py-[12px] lg:px-[16px] lg:py-[8px] md:px-[8px] md:py-[8px] md:text-[10px] sm:px-[12px] sm:py-[10px] sm:text-[12px] px-[10px] py-[8px] text-[8px]"
+            >
+              Add to basket
+            </button>
+          </div>
+          <div class="modelInfo xl:pt-[25px] xl:pb-[15px] lg:pt-[20px] lg:pb-[12px] md:pt-[15px] md:pb-[8px] sm:pb-[10px] sm:pt-[15px] pt-[12px] pb-[8px]">
+            <h4
+              class="font-sportify-regular text-secondary xl:text-[16px] xl:pb-[4px] lg:text-[14px] lg:pb-[4px] md:text-[14px] md:pb-[4px] sm:text-[18px] sm:pb-[4px] text-[14px] pb-[4px]"
+            >
+              Model Info
+            </h4>
+            <p
+              class="font-poppins-regular text-primary xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[14px] text-[12px]"
+            >
+              Model is 173 cm tall / 67 kg weight and is wearing size M.
+            </p>
+          </div>
+          <div class="modelInfo xl:pb-0 lg:pb-0 md:pb-0 sm:pb-[50px] pb-[50px]">
+            <h4
+              class="font-sportify-regular text-secondary xl:text-[16px] xl:pb-[4px] lg:text-[14px] lg:pb-[4px] md:text-[14px] md:pb-[4px] sm:text-[18px] sm:pb-[4px] text-[14px] pb-[4px]"
+            >
+              Product details
+            </h4>
+            <p
+              class="font-poppins-regular text-primary xl:text-[14px] lg:text-[12px] md:text-[11px] sm:text-[14px] text-[12px]"
+            >
+              Basic tank top featuring sleeveless and round neck.
+            </p>
+          </div>
+        </section>
+      </section>
+    </section>
+    </main>
+    <footer></footer>
+    
+    <script src="../src/js/details.js"></script>
+  </body>
+</html>

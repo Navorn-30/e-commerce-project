@@ -11,12 +11,13 @@ const fetchProducts = async () => {
       .map(
         (data) =>
           `<div class="card-hero w-full h-[300px] shadow-md bg-white cursor-pointer">
-
+        <a href="../page/product_detail.html?id=${data.id}">
   <img
     class="w-full h-[155px] aspect-square object-cover"
     src=${data.images[0] || "https://www.chanchao.com.tw/images/default.jpg"}
     alt="product image"
   />
+  </a>
   <div class="bady-card px-[6px] py-[8px]">
     <div class="price flex justify-between">
       <p class="font-poppins-medium text-primary">$ ${data?.price}</p>
@@ -39,6 +40,4 @@ const fetchProducts = async () => {
   }
 };
 fetchProducts();
-
-
 
