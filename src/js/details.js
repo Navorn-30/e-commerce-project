@@ -44,13 +44,26 @@ const fetchProductDetails = async () => {
     productTitle.textContent = data.title || "Unknown";
     desc.textContent = data.description || "Unknown";
     productPrice.textContent = data.price || "Unknown";
-    subImages.src = data.images[1] || "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
-    subImages2.src = data.images[2] || "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
-    subImages3.src = data.images[1] || "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
-    subImages4.src = data.images[2] || "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
+    subImages.src =
+      data.images[1] ||
+      "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
+    subImages2.src =
+      data.images[2] ||
+      "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
+    subImages3.src =
+      data.images[1] ||
+      "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
+    subImages4.src =
+      data.images[2] ||
+      "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
   } catch (error) {
     console.log(error);
   }
 };
 
 fetchProductDetails();
+
+function onToggleMenu(icon) {
+  icon.name = icon.name === "menu" ? "close" : "menu";
+  document.getElementById("mobile-menu").classList.toggle("hidden");
+}
