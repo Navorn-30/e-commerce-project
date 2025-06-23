@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/logo/logo_shop.png" type="image/x-icon">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../src/css/output.css">
+</head>
+<body>
+    <header class="bg-white shadow">
+      <nav
+        class="container mx-auto px-5 py-4 md:flex items-center justify-between"
+      >
+        
+        <div class="flex items-center justify-between w-full lg:w-auto">
+          <div class="flex items-center space-x-4">
+            <a href="../index.html">
+              <img
+              class="w-12 md:w-[70px]"
+              src="../assets/images/logo/logo_shop.png"
+              alt="PressMart Logo"
+            />
+            </a>
+            <span class="font-poppins-semibold text-xl md:text-3xl text-secondary"
+              ><a href="../index.html">PressMart</a></span
+            >
+          </div>
+
+          <ion-icon
+            class="lg:hidden text-3xl cursor-pointer text-accent"
+            name="menu"
+            onclick="onToggleMenu(this)"
+          ></ion-icon>
+        </div>
+
+        <div
+          id="mobile-menu"
+          class="hidden flex-col lg:flex lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6 font-medium text-gray-600 mt-4 lg:mt-0"
+        >
+          <ul
+            class="flex flex-col font-sportify-regular lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6"
+          >
+            <li><a href="../index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li>
+              <a href="./about.html" class="hover:text-blue-600 transition">About</a>
+            </li>
+            <li>
+              <a href="./dashboard.html" class="hover:text-blue-600 transition">Dashboard</a>
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="hover:text-blue-600 transition text-purple-700"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="relative p-0 border border-gray-200 rounded-lg w-full max-w-lg">
+            <input type="text" class="rounded-md p-2 w-full" placeholder="Search....">
+
+              <button type="submit" class="absolute right-4 top-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer class="bg-[#D9D9D9] py-10 mt-[60px]">
+      <div
+        class="container mx-auto px-5 flex flex-col md:flex-row md:justify-between gap-10"
+      >
+       
+        <div class="flex flex-col gap-4 items-start">
+          <span class="font-poppins-medium text-xl md:text-2xl text-primary"
+            >PressMart</span
+          >
+          <a href="../index.html">
+            <img
+            class="xl:w-[100px] lg:w-[85px] md:w-[75px] sm:w-[65px] w-[60px]"
+            src="../assets/images/logo/logo_shop.png"
+            alt="PressMart Logo"
+          />
+          </a>
+          
+          <a href="../index.html" class="text-secondary">www.pressmart.com</a>
+        </div>
+        
+        <div class="flex flex-col gap-2 md:max-w-sm">
+          <span class="font-poppins-medium text-primary text-base md:text-lg">About</span>
+          <p class="font-poppins-regular text-sm text-gray-600">
+            Welcome to
+            <span class="text-secondary font-sportify-medium italic"><a href="../index.html">PressMart</a></span>, your
+            go-to destination for stylish, affordable, and high-quality
+            clothing. Whether you're looking for everyday essentials, the latest
+            fashion trends, or timeless wardrobe staples, we have it all.
+          </p>
+        </div>
+       
+        <div class="font-poppins-regular flex flex-col gap-2 text-gray-600">
+          <span class="font-poppins-medium text-base text-primary md:text-lg">Our Brand</span>
+          <p>Balenciaga</p>
+          <p>Versace</p>
+          <p>Louis Vuitton</p>
+          <p>Adidas & Nike</p>
+        </div>
+       
+        <div class="flex flex-col text-gray-600 font-poppins-regular gap-2">
+          <span class="font-poppins-medium text-base text-primary md:text-lg">Services</span>
+          <p>Shipping & Payment</p>
+          <p>FAQ</p>
+          <p>Returns</p>
+          <p>Terms & Conditions</p>
+        </div>
+        
+        <div class="flex flex-col text-gray-600 font-poppins-regular gap-2">
+          <span class="font-poppins-medium text-base text-primary md:text-lg">Contact</span>
+          <p>E-mail: shop@mail.com</p>
+          <p>Phone: +66 45 670 98</p>
+          <p>Connect with us:</p>
+          <div class="flex gap-3 text-xl">
+            <ion-icon class="text-[#1877F2]" name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-tiktok"></ion-icon>
+            <ion-icon class="text-[#C13584]" name="logo-instagram"></ion-icon>
+            <ion-icon class="text-[#1DA1F2]" name="logo-twitter"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="../src/js/details.js"></script>
+</body>
+</html>
